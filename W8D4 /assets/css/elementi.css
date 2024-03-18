@@ -1,0 +1,337 @@
+/*IMPOSTAZIONI GENERALI*/
+html{
+    font-size: 62.5%;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    background: url(/assets/img/sfondo.png) center center;
+    padding: 15px ;
+     padding-top: 15px;
+     padding-right: 15px;
+     padding-bottom: 15px;
+     padding-left: 15px;
+
+}
+
+  @media only screen and (min-width: 768px) { 
+        html {
+          font-size: 100%;
+        }
+        body {
+          line-height: 2.4;
+          padding: 15px 60px;
+        } 
+    }
+
+* {box-sizing: border-box;}
+hr {display: none;}
+/*HEADER*/
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+@media only screen and (min-width: 768px) { 
+    header {
+      padding: 1em;
+     }
+}  
+header div img {
+    margin-bottom: 20px;
+
+}
+.responsive {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+
+}  
+header div p {
+    margin-bottom: 20px;
+
+}
+header nav ul {
+    margin: 0;
+
+}
+header nav li {
+    list-style: none;
+    display: inline-block;
+
+}
+header nav li:last-child {
+    margin-right: 2em;
+
+}
+header nav li a {
+    color: white;
+    text-decoration: none;
+
+}
+header nav li a:hover {
+    color: red;
+
+}
+header nav li a::before {
+    content: "\22c6\0020";
+
+}
+/*MAIN*/
+main {
+    background-color: white;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+section { 
+    background-color: #e3e3e3;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+    position: relative;
+
+}
+section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    background-color: #878787;
+    position: absolute;
+    top: -0.8em;
+    left: 5%;
+    padding: 0.5em 1em;
+     padding-top: 0.5em;
+     padding-right: 1em;
+     padding-bottom: 0.5em;
+     padding-left: 1em;
+    box-shadow: 1px 1px 2px #414141;
+
+}
+@media only screen and (min-width: 768px) { 
+   section h2 {
+     font-size: 100%;
+     top: -30px;
+     width: 20%;
+     padding: 5px;
+    }
+}
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+/*ELEMENTI ARTICLE*/
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+    padding: 0% 5% 0% 0%;
+
+}
+article p em::before {
+    content: "\f14b"; 
+
+}
+h1 + p {
+    color: #a0a0a0;
+}
+p {
+    margin-bottom: 1.2em;
+    padding: 0% 3% 0% 0%;
+    line-height: 20px;
+    
+}
+@media only screen and (min-width: 768px) { 
+    p {
+      line-height: 1.5;
+     }
+ }
+ul, ol {
+    margin-left: 2.5em;
+    line-height: 25px;
+    margin-bottom: 1.2em;
+
+}
+@media only screen and (min-width: 768px) { 
+    ul,ol {
+      line-height: 2;
+     }
+ }
+strong {
+    color: #a02571;
+    font-weight: bold;
+
+}
+code {
+    background-color: #e3e3e3;
+    border: 1px solid #969494;
+    border-radius: 5px;
+
+}
+a {
+    color: #00A0C6;
+    font-weight: bold;
+
+}
+/*TABELLA*/
+table {
+    margin:0 auto 2em;
+    box-sizing: border-box;
+    width: 70%;
+
+}
+table, td { 
+    border-collapse: collapse;
+    border-spacing: 0cap;
+
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1.2em;
+
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+
+}
+tbody tr {
+    border-bottom: 1px solid #666666;
+
+}
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+
+}
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+
+}
+/*FORM NEWSLETTER*/
+input{
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+
+}
+button {
+    padding: 4px 7px;
+    border: 0;
+    background-color: #3f6bca;
+    color: white;
+    font-weight: bold;
+
+}
+@media only screen and (min-width:768px) {
+    input {
+        display: inline-block;
+        width: 70%;
+        padding: 15px;
+    }
+    button {
+        padding: 15px 30px;
+    }
+}
+/* ELEMENTI ASIDE */
+
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+    line-height: 25px;
+
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+
+}
+/* FOOTER */
+footer {
+    background: rgb(69, 69, 69);
+    background: linear-gradient(0deg, rgb(77, 75, 75) 0%, rgb(12, 112, 134) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    margin-bottom: -2em;
+    padding: 1em;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.2rem;
+
+}
+footer a {
+    color: fuchsia;
+
+}
+/* BUTTON FIXED - qui non riesco bene a capire perché non viene la freccia to top, ho provato in altri modi ma questo era l'unico modo che mi consentiva di far apparire l'elemento pulsante per tronare ad inizio pagina-Non di super design ma il suo lavoro lo fa*/
+.floatbtn {
+    position: fixed;
+    bottom: 10px;
+    right: -2px;
+    width: 38px;
+    height: 38px;
+    color: rgb(170, 21, 170);
+    background-color: aqua;
+    border: 5px solid  #b00a5d;
+    border-radius: 30px;
+    outline-offset: 10px;
+
+}
+@media print {
+    body {
+        font-size: 24px;
+        padding: 0;
+        line-height: 1.5;
+        background-image: none;
+    
+    }
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+    ul ol {
+        line-height: 2.5;
+    }
+    th {
+        background-color: #d3d3d3;
+    }
+    header, article section, aside, footer, .toTop {
+        display: all;
+    }
+}
+
+
